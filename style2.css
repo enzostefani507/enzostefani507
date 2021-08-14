@@ -1,0 +1,137 @@
+:root {
+    --lg-bg-color: #f8f9fa;
+    --lg-contraste: #cbd3da;
+    --secciones-bordes-redondeado: 10px;
+    --boton-hover: #EEC072;
+    --color-fondo: #a2a6aa;
+}
+
+
+/*PRESENTACION*/
+
+.mi-foto {
+    width: 16rem;
+}
+
+
+/*CONTACT*/
+
+.contact {
+    background-color: var(--lg-bg-color);
+    border-radius: var(--secciones-bordes-redondeado);
+}
+
+.iconContacto:hover {
+    color: #7d7f81;
+    cursor: default;
+    transform: rotate(-15deg) scale(1.5);
+    transition: ease-in-out 0.3s;
+}
+
+.iconContacto {
+    cursor: default;
+    color: var(--color-fondo);
+    transform: rotate(360deg);
+    transition: ease-in-out 0.5s;
+}
+
+.credit {
+    color: var(--color-fondo);
+}
+
+.presentacion {
+    overflow-wrap: break-word;
+}
+
+
+/*PROYECTOS*/
+
+.bg-heroku {
+    background-color: #634987;
+}
+
+.bg-django {
+    background-color: #0C4B33;
+}
+
+.bg-boostrap {
+    background-color: #7952B3;
+}
+
+.bg-html {
+    background-color: #E85F2A;
+}
+
+.bg-css {
+    background-color: #33A9DC;
+}
+
+.bg-java {
+    background-color: #ED1F25;
+}
+
+.bg-hibernate {
+    background-color: #B6A976;
+}
+
+.bg-spring {
+    background-color: #5FB92E;
+}
+
+.bg-heroku {
+    background-color: #634987;
+}
+
+.bg-django {
+    background-color: #0C4B33;
+}
+
+.bg-boostrap {
+    background-color: #7952B3;
+}
+
+.bg-html {
+    background-color: #E85F2A;
+}
+
+.bg-css {
+    background-color: #33A9DC;
+}
+
+.bg-java {
+    background-color: #ED1F25;
+}
+
+.bg-hibernate {
+    background-color: #B6A976;
+}
+
+.item-proyecto {
+    transition: ease-in-out 0.3s;
+    text-align: center;
+}
+
+.item-proyecto:hover {
+    transform: scale(1.025);
+    transition: ease-in-out 0.3s;
+}
+
+
+/*VIDEOS*/
+
+.yt {
+    width: 17.5rem;
+    height: 9.844rem;
+}
+
+
+/*Formacion*/
+
+.edu-item {
+    background-color: var(--lg-bg-color);
+    border-radius: var(--secciones-bordes-redondeado);
+    margin-bottom: 0.5rem;
+    min-height: 5rem;
+    display: flex;
+    align-items: center;
+}

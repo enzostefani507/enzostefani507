@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&display=swap');
+
+:root {
+    --secciones-bg-color: #C072EE;
+    --secciones-bordes-redondeado: 20px;
+    --boton-hover: #EEC072;
+    --color-fondo: #72EEC0;
+}
+
+body{
+    background-color: var(--color-fondo);
+}
+
+.contact{
+    background-color : var(--secciones-bg-color);
+    border-radius : var(--secciones-bordes-redondeado);
+}
+
+.proyectos{
+    background-color : var(--secciones-bg-color);
+    border-radius : var(--secciones-bordes-redondeado);
+}
+
+.titlepage{
+    background-color : var(--secciones-bg-color);
+    border-radius : var(--secciones-bordes-redondeado);
+    height: 90vh;
+    transition: all 0.03s ease-in-out 0.03s;
+}
+
+.portafolio{
+    font-family: 'Play', sans-serif;
+    font-size: 4em;
+}
+
+.propietario{
+    font-size: 4em;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a{
+    color: var(--color-fondo);
+}
+
+a:hover{
+    color:var(--boton-hover);
+}
+
+.iconContacto:hover{
+    color:#61d1a8;
+    cursor: default;
+    transform: rotate(-45deg) scale(3);
+    transition: all 0.2s ease-in-out 0.2s;
+}
+
+.iconContacto{
+    cursor: default;
+    color: var(--color-fondo);
+    transform: rotate(360deg);
+    transition: all 0.2s ease-in-out 0.2s;
+}
+
+.abs-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card:hover{
+    transform: scale(1.2);
+    transition: all 0.2s ease-in-out 0.2s;
+}
+
+.tecnologias{
+    width: 8rem;
+}
+
+.tecnologias:hover{
+    transform: rotate(360deg);
+    transition: all 0.2s ease-in-out 0.2s;
+}
+
+.x{
+    background-color:rebeccapurple;
+}
+
+.mi-foto{
+    width:10rem;
+}
+

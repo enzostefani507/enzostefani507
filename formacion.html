@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang=”en”>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio Benites Enzo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link href="style2.css" rel="stylesheet" type="text/css">
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+        $("#hide").hide();
+        $("#hide2").hide();
+        $("#hide").on('click', function() {
+            $("#troncales").hide();
+            $("#show").show();
+            $("#hide").hide();
+            return false;
+        });
+    
+        $("#show").on('click', function() {
+            $("#troncales").show();
+             $("#show").hide();
+            $("#hide").show();
+            return false;
+        });
+        $("#hide2").on('click', function() {
+            $("#optativa").hide();
+            $("#show2").show();
+            $("#hide2").hide();
+            return false;
+        });
+        $("#show2").on('click', function() {
+            $("#optativa").show();
+             $("#show2").hide();
+            $("#hide2").show();
+            return false;
+        });
+    });
+    </script>
+</head>
+<body>
+    
+    <!-- NAVIGATION-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link " href="./index.html"><i class="bi bi-house">Me</i></a>
+            <a class="nav-link " href="./proyecto.html">Proyectos</a>
+            <a class="nav-link " href="./videos.html">Videos</a>
+            <a class="nav-link active" href="./formacion.html">Formacion</a>
+          </div>    
+        </div>
+      </div>
+    </nav>
+    <!-- END NAVIGATION-->
+
+    <!-- PRESENTACION -->
+    <div class="container pt-5 pb-5" >
+       <h1>Educacion</h1>
+        <h2 class="fw-lighter pb-5">En este tiempo estuve estudiando ls siguiente.</h2>
+
+        <div class="container ">
+            <div class="row edu-item">
+                <h3><img height="30" widh="30" src="https://avatars.githubusercontent.com/u/48265856?s=280&v=4">Ingeniería en sistemas de Información en la <a href="https://www.frre.utn.edu.ar/isi/paginas/view/item/isi1">UTN FRRe</a></h3>
+                
+                <!-- Materias principales-->
+                <p class="text-center">
+                    <a class="btn btn-outline-secondary m-1" href="#" id="show"><i class="bi bi-chevron-right"></i> Ver materias troncales</a>
+                    <a class="btn btn-outline-danger m-1" href="#" id="hide" title="Cerrar"><i class="bi bi-chevron-down"></i> Dejar de ver troncales</a>
+                    <a class="btn btn-outline-secondary m-1" href="#" id="show2"><i class="bi bi-chevron-right"></i> Ver materias optativas</a>
+                    <a class="btn btn-outline-danger m-1" href="#" id="hide2" title="Cerrar"><i class="bi bi-chevron-down"></i> Dejar de ver optativas</a>
+                </p>
+                
+                <div id="content" class="col-lg-12 mb-2">
+                    <div id="troncales" style="display: none;"> 
+                        <p class="text-center">
+                        <span class="badge rounded-pill list-group-item-success"> Aprobada</span>
+                        <span class="badge rounded-pill list-group-item-warning">Cursada</span>
+                        <span class="badge rounded-pill list-group-item-light">Pendiente de cursar</span>
+                        <span class="badge rounded-pill list-group-item-info">Cursando</span>
+                        </p>
+                        <ul class="list-group list-group-horizontal-lg">
+                            <li class="list-group-item list-group-item-dark">1<sup>er</sup>año</li>
+                            <li class="list-group-item list-group-item-success">Análisis Matemático</li>
+                            <li class="list-group-item list-group-item-success">Algebra y Geometría Analítica</li>
+                            <li class="list-group-item list-group-item-success">Matemática Discreta</li>
+                            <li class="list-group-item list-group-item-success">Sistemas y Organizaciones (Int.)</li>
+                            <li class="list-group-item list-group-item-success">Algoritmos y Estructuras de Datos</li>
+                            <li class="list-group-item list-group-item-success">Inglés I</li>
+                            <li class="list-group-item list-group-item-success">Física I</li>
+                        </ul>
+                        <ul class="list-group list-group-horizontal-lg">
+                            <li class="list-group-item list-group-item-dark">2<sup>do</sup>año</li>
+                            <li class="list-group-item list-group-item-warning">Arquitectura de Computadoras</li>
+                            <li class="list-group-item list-group-item-success">Química</li>
+                            <li class="list-group-item list-group-item-success">Análisis Matemático II</li>
+                            <li class="list-group-item list-group-item-success">Física II</li>
+                            <li class="list-group-item list-group-item-success">Análisis de Sistemas (Int.) S</li>
+                            <li class="list-group-item list-group-item-success">Sintaxis y Semántica de los Lenguajes</li>
+                            <li class="list-group-item list-group-item-success">Paradigmas de Programación</li>
+                            <li class="list-group-item list-group-item-success">Sistemas de Representación</li>
+                            <li class="list-group-item list-group-item-success">Sistemas Operativos</li>
+                        </ul>
+                        <ul class="list-group list-group-horizontal-lg">            
+                        <li class="list-group-item list-group-item-dark">3<sup>er</sup>año</li>
+                            <li class="list-group-item list-group-item-success">Probabilidades y Estadísticas</li>
+                            <li class="list-group-item list-group-item-success">Diseño de Sistemas (Int.)</li>
+                            <li class="list-group-item list-group-item-success">Comunicaciones</li>
+                            <li class="list-group-item list-group-item-success">Matemática Superior</li>
+                            <li class="list-group-item list-group-item-success">Gestión de Datos</li>
+                            <li class="list-group-item list-group-item-success">Ingeniería y Sociedad</li>
+                            <li class="list-group-item list-group-item-success">Economía</li>
+                            <li class="list-group-item list-group-item-success">Inglés II</li>
+                        </ul>
+                        <ul class="list-group list-group-horizontal-lg">
+                        <li class="list-group-item list-group-item-dark">4<sup>to</sup>año</li>
+                            <li class="list-group-item list-group-item-info">Redes de Información</li>
+                            <li class="list-group-item list-group-item-light">Administración de Recursos (Int.)</li>
+                            <li class="list-group-item list-group-item-success">Investigación Operativa</li>
+                            <li class="list-group-item list-group-item-warning">Simulación</li>
+                            <li class="list-group-item list-group-item-success">Ingeniería de Software</li>
+                            <li class="list-group-item list-group-item-info">Teoría de Contro</li>
+                        </ul>
+                        <ul class="list-group list-group-horizontal-lg">
+                        <li class="list-group-item list-group-item-dark">5<sup>to</sup>año</li>
+                            <li class="list-group-item list-group-item-light">Proyecto Final (Int.)</li>
+                            <li class="list-group-item list-group-item-light">Inteligencia Artificial</li>
+                            <li class="list-group-item list-group-item-light">Administración Gerencial</li>
+                            <li class="list-group-item list-group-item-light">Sistemas de Gestión</li>
+                            <li class="list-group-item list-group-item-light">Práctica Supervisada (PS)</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- End materias principales-->
+
+                <!-- Materias opcionales -->
+                <div id="content" class="col-lg-12 ">
+                    <div id="optativa" class="col-lg-12 mb-2" style="display: none;"> 
+                        <p class="text-center">
+                        <span class="badge rounded-pill list-group-item-success"> Aprobada</span>
+                        <span class="badge rounded-pill list-group-item-warning">Cursada</span>
+                        <span class="badge rounded-pill list-group-item-light">Pendiente de cursar</span>
+                        <span class="badge rounded-pill list-group-item-info">Cursando</span>
+                        </p>
+                        <ul class="list-group list-group">
+                            <li class="list-group-item list-group-item-success">Complejidad y Técnicas de Diseño de Algoritmos</li>
+                            <li class="list-group-item list-group-item-light">Planificación</li>
+                            <li class="list-group-item list-group-item-success">Bases de Datos Aplicadas</li>
+                            <li class="list-group-item list-group-item-success">Desarrollo de Aplicaciones Cliente-Servidor</li>
+                            <li class="list-group-item list-group-item-light">Sistemas de Información Geográficos</li>
+                            <li class="list-group-item list-group-item-info">Calidad del Producto y del Proceso Software</li>
+                            <li class="list-group-item list-group-item-info">Técnicas de Desarrollo de Software Ágil</li>
+                            <li class="list-group-item list-group-item-light">Gestión de Seguridad de la Información</li>
+                            <li class="list-group-item list-group-item-light">Auditoría de Sistemas e Informática Forense</li>
+                            <li class="list-group-item list-group-item-light">Integración de desarrollo y operación de Software</li>
+                            <li class="list-group-item list-group-item-light">Sistemas de Inteligencia de Negocios y Soporte de Decisiones</li>
+                            <li class="list-group-item list-group-item-light">Formación de Emprendedores</li>
+                            <li class="list-group-item list-group-item-light">Fundamentos de Ciberseguridad</li>
+                        </ul>                
+                    </div>
+                </div>
+            </div>
+        
+        <!-- End materias opcioales-->
+            <div class="row edu-item">
+                <h3><img height="30" widh="30" src="https://d3njjcbhbojbot.cloudfront.net/web/images/favicons/apple-touch-icon-144x144.png">Version Control with Git en <a href="https://es.coursera.org/"> Coursera</a></h3>
+                <p class="text-center">
+                    <a class="btn btn-outline-secondary" href="https://www.coursera.org/account/accomplishments/verify/XTUQL2RMVADV?utm_source=ln&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=course" id="show"><i class="bi bi-paperclip"></i></i>Certificado</a>
+                </p>
+            </div>
+
+            <div class="row edu-item">
+                <h3><img height="30" widh="30" src="data:image/png;base64,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">3<sup>°</sup> etapa del<a href="https://empleo.chaco.gob.ar/informatorio"> Informatorio</a></h3>
+                <p class="text-center">
+                    <a class="btn btn-outline-secondary" href="https://github.com/enzostefani507/Informatorio-Java2021/tree/spring/Spring/comercio" id="show"><i class="bi bi-github"></i></i> Codigo Proyecto</a>
+                </p>
+            </div>
+
+            <div class="row edu-item">
+                <h3><img height="30" widh="30" src="data:image/png;base64,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">2<sup>°</sup> etapa del<a href="https://empleo.chaco.gob.ar/informatorio"> Informatorio</a></h3>
+                <p class="text-center">
+                    <a class="btn btn-outline-secondary m-1" href="https://github.com/enzostefani507/python-info" id="show"><i class="bi bi-code"></i></i> Codigo python</a>
+                    <a class="btn btn-outline-secondary m-1" href="https://github.com/enzostefani507/sql-info" id="show"><i class="bi bi-hdd-stack"></i>  Bases de datos</a>
+                    <a class="btn btn-outline-secondary m-1" href="https://github.com/enzostefani507/amada-mascota" id="show"><i class="bi bi-github"></i></i> Codigo Proyecto</a>
+                    <a class="btn btn-outline-secondary m-1" href="https://amadamascota.herokuapp.com/" id="show"><i class="bi bi-globe"></i></i> Deploy Proyecto</a>
+                    <a class="btn btn-outline-secondary" href="https://drive.google.com/file/d/1bRPpbiWJa2pSsYhVAbptSSUURLZHAc24/view?usp=sharing" id="show"><i class="bi bi-paperclip"></i></i>Certificado</a>
+                </p>
+            </div>
+
+            <div class="row edu-item">
+                <h3><img height="30" widh="30" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAbFBMVEX///89ga0teqkgdaY5f6wqeagyfKomd6e8z94edKb7/f74+vy1ytvA0uA1fqvb5e3U4Oqqw9bt8vaTs8ybuM/l7PLH1+RJh7GsxNfp7/RrmrxTjLSKrciBqMXO3OdDhK93ocFml7ppmbwAbKHW3YmIAAAQt0lEQVR4nO1dZ5PiOhA8RxFNhl3CLtz7///x2Th1K9ki2VflqbovwILakqanZ0a6P38GG2ywwQYbbLDBBhtssMH+QVsslsvFoutRvM3254O42+95P+l6MK+33VlEsVdYHInLrusRvdbWx6CCV4AMjuuuR/VCW40TT7EkWHU9rpfZUaj4MhPHrkf2IjvFeoDpUj11PbaX2M0IMIV463p0L7CNbwboef656/E9bcvABtDzgn3XI3zW7Pg8L4y7HuGTtuI16osgENJL267H+JRNiSf836/Fer34OkS0Tqddj/Ih241W2+12cyAoX+W7IwQenlbb8+Wymf1DEflukwjfj1MjgIDgOw5xK8Zxkv4T4rLsbtAOtvsb4PgrgD/4oYXWxSbi9A9g3Opi0JTbJeLb6OOAcHzpZtitbXIyELzsT6YmnowPvfY8k4MhRAuV8OymWcn5R5M+y6qTdoVmM6Ow3tYYroZhf2fxbBy1/yV/9sscrya9lRzkIGM/JYxqJapzuIrxs8wsUV+18aneWr5/Hu1H56SMXpKr/OFLtaD96PI1m20Pov7znsY5P3WkMi6nbO4VcxPI2bUSeyjKCdvbprwXVk1hKCB8OcbaMZeLNPytPef0UM2r+NCYnaxWggFlCm/5sINvfLEMycMY1+OkXuWzj4zZzY7lBEQjer3SF7hOy/kWLIB35VMKe+hOq8F5B+mdgvnia/3STBiAXEqXGvRPaVS+UaG+RQHnt36pFMaxvBh3pQOKexefrseVk1Cefjm79SslQvWzlT8e940wzpUbDJSwMrxvujCsXyk9qcp7XumQ+0YYIBWEAaGX1K+YEVYJjtB/74hdDeLoSBGxxcqDIZcIhVyBgifVM8KAxIuyvJaREaHiafYQj//+6ZFhGK0yQLFFI/XzocwsZ5Bf4udPfywBOSsH2ZXigEiseiKRNImY3FBVc3c2Q60neB9O6zfqF+s5l/iCBFjQnzrxLwxLWqS7MLQi9II5fR4UWI9Yf445bIpKJxuYk6B+HZP9wRVj8hEuh97IxBOld+GNpUDlbkDoJWPcjD5OYk9Y/wdz9D4mIDzKp+Eq5SQNYOcMFbjfLo3ygriwRlSBsSCM4bFMx/BGP1if80+Y2qa6jHmVZilS+KsLTmIvWP+IOVJU8nupBQMQyqlEdE8L/DPRgxLxDldVgv0jJymrDckoGSHFNuS4esD6F5xCZHulvGRBSH+4x+3bvdZf4xQS21/lDD84IQUhTT690TnrUyI/gvjkeyyB8AQgVNL/uIHp3XHHdRoqkpFLVGsYVoTohCfoa7pmfeJnZHtNfRBW6Uwt4WBS/Ex7+4NwNCZMg1yppSU7QmT9b3w8atnqk4bK10s28I6mlA8pKg1CDxJVzLGQo/u8EQ5Mso001cEGhBGQ+7IvrE/Kl7T9QR5/izk8Gf6+yww/AwBu/tH1zDYgJLlPz6471iflS09a24aACHUlbpL0viXz8zk7IA7cLTttK4loQEjKa9sH1ueliDrnom3JAIQ6R8TkTjIxRi/9QSPtgFp1rQRs7RBSBuTSPeuTdqAqg6GjS9Shpx6h548MXx93wvrEyhQ9mg4fNCI0ysROWJ+9CToJNaxui9AsE6MOWJ/2CaVn6mefxBj0QKFpXiIMY19EfvVISCbiHHbA+mueQsi/lywZit/L5nwbV9OlQeiH2/1yOT9XeVWM/Fbdsj7JP116xi+aYaerKDEhrPqiJ5figWH0PsGH+HHWZ/mH26cImkU91GlxakZB6MPMj4ovRF44d8n6FHLQJsldrCBlnjcNAcJ7IZQLwKt8cSMvkEz8MOtTnoHSM7mLldbUNNIg9KUGxJId4KVjd6wvKXh4J89YC6lodFfKoB0yhHJNomAHjG8pLvws62PkTz+d70+l8LcWEsJIUxzMnxrlgFlmvhiEzVga4PLJ96c/kv/CUxEqRZdj/tiQeeiHorn8F+8ziqcoYMtXWqT0GGSCERD+RJrPFCUZlonwQx9kfa6aIUkXz1wd/VFB6CtxWJkkN8rEz7E+7Q565OVrygo8eDJCNdNbfi3mFUmIfYz1uWqG26YMlhUvcg9PGKGy5qo4kFLnVP1QW+beYyRryPWV7yjHJu9aghEqa65WlZFJJiafYX0+94qNSzAa6W/u7SgSQqkfCgIYml56nko//FvsL3lSHGa1ouQIKw8wJYTUNFy1g+dAYHopoRd/4iAGFz5xQdX1NO5a/7MpgvE6Ps+b+XzcrqRVrvBGQpviLZjYaOvThqukAPu8xa1sCJYRemPQJJQYGJtk4gdYnwuf+noaLrLpKSjnIFIQIm8Sx+Iy5xLl+1mfC5+48yty5lq3trVWg5DTV0aZGLz7kCklatl7V9E4qgOUeIgwx4P5JUaI6dfdR7X+xrhd6iAZs9/4/F0Q0pdQFeTNWp9SJ/w8qw5MfPw05YCw6ArC2FQqdSDPkkx8M+tvWTaBR6lCOXKv3IZXD7oZIcVK2L/6ZtaPjIOoVpJGTJkRgu9X+otMMlHOfrzUuNEHPUrdjIYJDP68G0JKMtMmfSfrc90TnUEdsOHAeMxuCM0y8Y2sz8qX6mnV+MYQsM25v9QRoW+SiW9kfdrw5FE22oBNak50ROgZZaJ4F+uz8kWPUqdPMWBbShQH7NcKIa5GlonvuiOMpwS3SRUca7LfWoS7NgjNMnHM2uVVxlNCHiXWBWxKu4IrQotMfM/9WdxBgo+x9kDUriAXSp0R0qam9ivxDtZn5Utbocq9UcCmDNkZoVkmvoX1ueUXRcxPc8CWD8uKUNe/Qe0nJBPfcEMY7yp9A5Q5YGuBUDeH1OFBqz5S6gZPG++qSOtRAmPA9uAcmmXi61lfbgLSYbcEbDLC75YIKZVHru7lrL+hXYhtuzV2zEjP1UWqQwhrzdBHhe0nJBNfzPp8sxwVN7dtAjZ5xlojJCAsE1/L+uwY9Q1QtoBNRrhui9B8SuHFrM8D1jZAWQO2xxEmRpkoV9KfshVPoaaeJgVsesdoQzgxIKSkBeXBXsr63Hiva4AyZ9j0CIPWCLFLYP0u1ueyffIX3qo8ij1gewIhJS0osHoh6/MvahqgpOjDcBWbFaFpH1pOKbyO9Znb9B7FtwdsjghDbGrU1mCVZ/2UUcO6pgEqs4aArRkh5JpDkVw351tQfg2mZakx9VWsL52dwG1xbhuwyXimqi+tEEZFU+NkVVzgRr6bT+m8hvU5PIm19TRLhs0VIdxFvy5uNxub8oqvYX3psKvQ1dMaA7b2CCPqXss3iFEmvubSBQ5PYm09rTFgUxCa9qFUPMv3K59SeDXrS/kkTQNUm4CtNUJ5UtQ+ud2rWZ+TF3TuuAr1mw8EtUWo1D/z8M58pkrtEXQ1SflSA1S1HK0ZNieEsTLg/DEaZaJy/Z2zcYSpJ98WAVtbhOotWnlLJs0tfemzrC8NWNsA1SZgewJhca8k7H+Sic+yvjRgfQNUiwNBOZ56rk0IfaVwVuRiyYcbOwfdjRvWaVuv9QGbZQoR4cS0D2UKrxYRtp9sjMd1nI0b1rme1qIkKlncjFBpb69GEGuTX/ITdjZWvkivE7eArTVCua+2HoG24qz7ExeTzrJqLxSw3tdiRPjHqC3G5GuAGYRRJj5xwSIPkBpZqoZBrR5+AiG3dS3rRWGWiY+zvnTN01h3oQBFG3+NAZsDwvoe6T/MVug0+fziw6zPxzn0Fwro9fBTCGmhwhjIpdGRlkcvWJSueUKlDaIY/sASsDkhRAmKMZWx/eTRq5bYbRgaoPBAkDGX5IgQfwqdnW+68+xB1pfchl4/qAeCXoAQLwXbwSjMMvGxCxZv5gaoup6G7tXKhU4I0T/TcWdT+8lDrC8lLwwNUNr+0jYILZkoXo4oqM0y8RHWZ+Wrr9CTew2tbC8jtM4hRhHG487kCB/Q+tJNXfoKPf7g+uoFkW8lxNZziNub3IFZJrpfsCjVVrQJXzmrPv1ZXUMLzNZzSCeEeb+ZZKIz60vKV68ftNFSBtMwm+0R4idPpv3G0s6V9aW7O1A/1Jc5mI8e62G2X6WY8GISQnVFMtFR60vKV5/wpUN0Bpi/CNO3IeTKDJQO9samVjrM7tjNJ18RCx4FWCQwf0ENc/l1KWEinoYqN1xlw9dT0H6j1GzipPV9DtgM9z22Vi0ZzMNYBDaEXCHFfA11YNB+47CrzQMvTbpbJTKcgfESlw7B6XIFoUoDQgyW2K1TBZrUjwthyDd1wVv0c+Hh4fMrTb0YsGyk540VtdmDR70lkWBJ+IbB9cH/lzFqQAgFtR27PWIu46Fyu+2lFnt4S7nvMYlFcNvuneeyCSGeapN+U1vfk7/NbpYGKN1/3ZjdExR4F7fJbEKIvypdZmvMK7Y+EfXN46cLui3/G5zbZPoNCFEFywvHlFcM0QnZjOv2JC5/7ammMI6C33aT2YQQff9CSuEFBsII2x4X+uHtC0Hw9HISwteuVHgkcSRu258GSdqIENNCY/x2ERyQFpAt2zIiIVRc8G60uUVBFCc2nPfJPM8s2ZNYQSgl6nC33dkrvIO7fC2ZhNFptEZI195oC+Xf++1dJ1kzM7EvxNE0meocSggxFt4GvghO59lCE2Hgf0zTmhAx3LN44CIWs67aJJ3Mw3mkTmbjHKJq323nxr09rxG2PyKMPU2N1xQvZudbkMK0+KB0Mv3rimufjQjbdgNBkNU+WYO+q12ydTffHmNrEiPxxfgE8a0dYeJHQdyqfI3KQ70Vx2i4Eduff1/f9aCIjavWB0Y2Ioz9jHFWy3bpwSn23DkcEOazG06tANPl7GyilMSOsHKWrXOfixX+jIvK51ypuM5dk+Z6SrEj/M/gLPW23m+PkeDTXi7XY3LJIt1Dwunnc8soxUNKIYShjLC1ZdmRWETKKnH670zU//ncfQkVw8koJfW12Ww+j3CS50S04YbjveaGQlnmBrzrylksLdJVK0TwFMKUlu6PSjswSfu3McP33L8rZXH/uJ27dq9+z8GbJy4I022deq/YFkGFkWttZhfY4+ski8luG0200s7aIkw9yl+RL3Krjd2bvxYNEO8PLlu1mQ96C8K7RwmapEwB8BGXtRBtvvpRH9SAcJF6lHGDgEGAj92ysD41VgRrS1XhOA1FmmRhC4S70fk0tm865bcfvm1wG9g1vWxZOBleVz8tXG1ebZQa9dJNd2uW2PKPji9PHOxenwO3n7sfBkljjeN2b3e1KsL2mw5/zR8fn7wucjq7tXFlKkw/8G9bc7hXKGA8Jev6I1modVu95E6l5b1U5vp489vIM0bRPOS5irCh3Ygt9W7RcfXSo8AFLzns/xKmNqotnlbzSWfNF6bL4/diywE9YXc311CsN4zqziglca5PiYLQfDqPn9ZDGXYnmyzvLsF102SWwTxtZrNrFUw4rNIUXRBfvz51C+33fHPKkhbuMLNzd1CBhDk0I7xP3Wkz//h/xfL4ZDogzKZOSWN90u6T6c4m7RBmAUQ6de+5bcfJll/XxJ2s7QiLDORHrpxtZ+v95hYIW9ZUi7DW5TVCYxa5B5YqArfQQEGY/Y8lxkpATyyPnltKA+iBmIzvU/cmJn+5LWb3hFHjZCLCU8+nTrXpz/bYFOc55OH7ammcdzDXM+Lxv48wsyzO8+XQIKuhepfRP7YubZaHBmnEFibJXdi9O37uxpbby/V4vG4+Fj8PNthggw022GCDDTbYYIMNNthggw022GCDDTbYYP+O/Q9Hx+KXD+RcTAAAAABJRU5ErkJggg==">1<sup>°</sup> etapa del<a href="https://empleo.chaco.gob.ar/informatorio"> Informatorio</a></h3>
+                <p class="text-center">
+                    <a class="btn btn-outline-secondary" href="https://drive.google.com/file/d/1E3Xz1IKZP8uohMV_N-K7cZW0wBigq7Ap/view?usp=sharing" id="show"><i class="bi bi-paperclip"></i></i>Certificado</a>
+                </p>
+            </div>
+
+            <div class="row edu-item">
+                <h3>🏫Secundario</h3>
+            </div>
+        </div>
+    </div>
+    <!-- END PRESENTACION-->  
+
+    <!--CONTACT-->
+    <div class="container mt-5 pt-5 text-center contact   ">
+      <div class="row">
+        <div class="col">
+          <a href="https://www.linkedin.com/in/benitesenzo/">
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-linkedin iconContacto gh" viewBox="0 0 16 16">
+            <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+        </svg>
+        </a>
+        </div>
+        <div class="col">
+          <a href="https://github.com/enzostefani507?tab=repositories">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-github iconContacto" viewBox="0 0 16 16">
+            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+          </svg>
+        </a>
+        </div>
+        <div class="col">
+          <a href="mailto:enzostefani507@gmail.com">
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-mailbox iconContacto" viewBox="0 0 16 16">
+            <path d="M4 4a3 3 0 0 0-3 3v6h6V7a3 3 0 0 0-3-3zm0-1h8a4 4 0 0 1 4 4v6a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V7a4 4 0 0 1 4-4zm2.646 1A3.99 3.99 0 0 1 8 7v6h7V7a3 3 0 0 0-3-3H6.646z"/>
+            <path d="M11.793 8.5H9v-1h5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.354-.146l-.853-.854zM5 7c0 .552-.448 0-1 0s-1 .552-1 0a1 1 0 0 1 2 0z"/>
+        </svg>
+        </a>
+        </div>
+      </div>
+      <div class="row mt-5 mb-0">
+        <div class="col mt-2 pb-0">
+          <p class="fw-light credit">Iconos diseñados por <a href="https://www.freepik.com" title="Freepik" class="credit">Freepik</a></p>
+        </div>
+      </div>
+    </div>
+    <!-- END CONTACT-->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
