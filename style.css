@@ -1,91 +1,137 @@
-@import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&display=swap');
-
 :root {
-    --secciones-bg-color: #C072EE;
-    --secciones-bordes-redondeado: 20px;
+    --lg-bg-color: #f8f9fa;
+    --lg-contraste: #cbd3da;
+    --secciones-bordes-redondeado: 10px;
     --boton-hover: #EEC072;
-    --color-fondo: #72EEC0;
+    --color-fondo: #a2a6aa;
 }
 
-body{
-    background-color: var(--color-fondo);
+
+/*PRESENTACION*/
+
+.mi-foto {
+    width: 16rem;
 }
 
-.contact{
-    background-color : var(--secciones-bg-color);
-    border-radius : var(--secciones-bordes-redondeado);
+
+/*CONTACT*/
+
+.contact {
+    background-color: var(--lg-bg-color);
+    border-radius: var(--secciones-bordes-redondeado);
 }
 
-.proyectos{
-    background-color : var(--secciones-bg-color);
-    border-radius : var(--secciones-bordes-redondeado);
-}
-
-.titlepage{
-    background-color : var(--secciones-bg-color);
-    border-radius : var(--secciones-bordes-redondeado);
-    height: 90vh;
-    transition: all 0.03s ease-in-out 0.03s;
-}
-
-.portafolio{
-    font-family: 'Play', sans-serif;
-    font-size: 4em;
-}
-
-.propietario{
-    font-size: 4em;
-    font-family: 'Montserrat', sans-serif;
-}
-
-a{
-    color: var(--color-fondo);
-}
-
-a:hover{
-    color:var(--boton-hover);
-}
-
-.iconContacto:hover{
-    color:#61d1a8;
+.iconContacto:hover {
+    color: #7d7f81;
     cursor: default;
-    transform: rotate(-45deg) scale(3);
-    transition: all 0.2s ease-in-out 0.2s;
+    transform: rotate(-15deg) scale(1.5);
+    transition: ease-in-out 0.3s;
 }
 
-.iconContacto{
+.iconContacto {
     cursor: default;
     color: var(--color-fondo);
     transform: rotate(360deg);
-    transition: all 0.2s ease-in-out 0.2s;
+    transition: ease-in-out 0.5s;
 }
 
-.abs-center {
+.credit {
+    color: var(--color-fondo);
+}
+
+.presentacion {
+    overflow-wrap: break-word;
+}
+
+
+/*PROYECTOS*/
+
+.bg-heroku {
+    background-color: #634987;
+}
+
+.bg-django {
+    background-color: #0C4B33;
+}
+
+.bg-boostrap {
+    background-color: #7952B3;
+}
+
+.bg-html {
+    background-color: #E85F2A;
+}
+
+.bg-css {
+    background-color: #33A9DC;
+}
+
+.bg-java {
+    background-color: #ED1F25;
+}
+
+.bg-hibernate {
+    background-color: #B6A976;
+}
+
+.bg-spring {
+    background-color: #5FB92E;
+}
+
+.bg-heroku {
+    background-color: #634987;
+}
+
+.bg-django {
+    background-color: #0C4B33;
+}
+
+.bg-boostrap {
+    background-color: #7952B3;
+}
+
+.bg-html {
+    background-color: #E85F2A;
+}
+
+.bg-css {
+    background-color: #33A9DC;
+}
+
+.bg-java {
+    background-color: #ED1F25;
+}
+
+.bg-hibernate {
+    background-color: #B6A976;
+}
+
+.item-proyecto {
+    transition: ease-in-out 0.3s;
+    text-align: center;
+}
+
+.item-proyecto:hover {
+    transform: scale(1.025);
+    transition: ease-in-out 0.3s;
+}
+
+
+/*VIDEOS*/
+
+.yt {
+    width: 17.5rem;
+    height: 9.844rem;
+}
+
+
+/*Formacion*/
+
+.edu-item {
+    background-color: var(--lg-bg-color);
+    border-radius: var(--secciones-bordes-redondeado);
+    margin-bottom: 0.5rem;
+    min-height: 5rem;
     display: flex;
     align-items: center;
-    justify-content: center;
 }
-
-.card:hover{
-    transform: scale(1.2);
-    transition: all 0.2s ease-in-out 0.2s;
-}
-
-.tecnologias{
-    width: 8rem;
-}
-
-.tecnologias:hover{
-    transform: rotate(360deg);
-    transition: all 0.2s ease-in-out 0.2s;
-}
-
-.x{
-    background-color:rebeccapurple;
-}
-
-.mi-foto{
-    width:10rem;
-}
-
