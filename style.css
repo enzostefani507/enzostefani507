@@ -66,6 +66,15 @@
     background-color: #33A9DC;
 }
 
+.bg-react{
+    background-color: #61DBFB;   
+}
+
+.bg-laravel{
+    background-color: #FF2D20;   
+}
+
+
 .bg-java {
     background-color: #ED1F25;
 }
@@ -104,6 +113,14 @@
 
 .bg-hibernate {
     background-color: #B6A976;
+}
+
+.bg-php{
+    background-color: #1e85b1;
+}
+
+.bg-js{
+    background-color: rgb(207, 207, 20);
 }
 
 .item-proyecto {
